@@ -1,7 +1,20 @@
-﻿namespace CleanTheet.Domain.Entities;
+﻿using CleanTheet.Domain.Exceptions;
+
+namespace CleanTheet.Domain.Entities;
 
 public class DentalOffice
 {
     public Guid Id { get; private set; }
     public string Name { get; private set; } = null!;
+
+    public DentalOffice(string name)
+    {
+        if(string.IsNullOrWhiteSpace(name))
+        {
+            throw new BussinessRuleException($"The {nameof(name)} is required.");
+        }
+        Name = name;
+        Id = Guid.CreateVersion7();
+    }
+
 }
