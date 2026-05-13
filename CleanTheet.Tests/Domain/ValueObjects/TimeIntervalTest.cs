@@ -1,0 +1,29 @@
+﻿using CleanTheet.Domain.Exceptions;
+using CleanTheet.Domain.ValueObjects;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CleanTheet.Tests.Domain.ValueObjects;
+
+[TestClass]
+public class TimeIntervalTest
+{
+    [TestMethod]
+    public void Constructor_EndBeforeStart_Throws()
+    {
+        var start = DateTime.Now;
+        var end = start.AddHours(-1);
+        Assert.ThrowsExactly<BussinessRuleException>(() => new TimeInterval(start, end));
+    }
+
+    [TestMethod]
+    public void Constructor_ValidInterval_NoException()
+    {
+        var start = DateTime.Now;
+        var end = start.AddHours(1);
+        var interval = new TimeInterval(start, end);
+        Assert.AreEqual(start, interval.Start);
+        Assert.AreEqual(end, interval.End);
+    }
+}

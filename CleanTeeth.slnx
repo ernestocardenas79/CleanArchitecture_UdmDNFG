@@ -4,5 +4,7 @@
     <Project Path="CleanTheet.Domain/CleanTheet.Domain.csproj" />
   </Folder>
   <Folder Name="/Infrastructure/" />
-  <Folder Name="/Testing/" />
+  <Folder Name="/Testing/">
+    <Project Path="CleanTheet.Tests/CleanTheet.Tests.csproj" Id="0c8250f8-dbe8-4059-a96d-3a4d04fb6315" />
+  </Folder>
 </Solution>

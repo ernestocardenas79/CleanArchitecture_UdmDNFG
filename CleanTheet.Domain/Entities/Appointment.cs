@@ -10,7 +10,7 @@ public class Appointment
     public Guid PatientId { get; private set; }
     public Guid DentistId { get; private set; }
     public Guid DentalOfficeId { get; private set; }
-    public AppoimentStatus Status { get; private set; }
+    public AppointmentStatus Status { get; private set; }
     public TimeInterval TimeInterval { get; private set; }
     public DateTime EndTime { get; private set; }
     public Patient? Patient { get; private set; }
@@ -28,25 +28,25 @@ public class Appointment
         DentistId = dentistId;
         DentalOfficeId = dentalOfficeId;
         TimeInterval = timeInterval;
-        Status = AppoimentStatus.Scheduled;
+        Status = AppointmentStatus.Scheduled;
         Id = Guid.CreateVersion7();
     }
 
     public void Cancel()
     {
-        if (Status != AppoimentStatus.Scheduled)
+        if (Status != AppointmentStatus.Scheduled)
         {
             throw new BussinessRuleException("Only scheduled appointments can be cancelled");
         }
-        Status = AppoimentStatus.Cancelled;
+        Status = AppointmentStatus.Cancelled;
     }
 
     public void Complete()
     {
-        if (Status != AppoimentStatus.Scheduled)
+        if (Status != AppointmentStatus.Scheduled)
         {
             throw new BussinessRuleException("Only scheduled appointments can be completed");
         }
-        Status = AppoimentStatus.Completed;
+        Status = AppointmentStatus.Completed;
     }
 }
