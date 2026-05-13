@@ -1,4 +1,5 @@
 ﻿using CleanTheet.Domain.Exceptions;
+using CleanTheet.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,22 +10,17 @@ public class Dentist
 {
     public Guid Id { get; private set; }
     public string Name { get; private set; }= null!;
-    public string Email { get; private set; }=null!;
+    public Email Email { get; private set; }=null!;
 
-    public Dentist(string name, string email)
+    public Dentist(string name, Email email)
     {
         if(string.IsNullOrWhiteSpace(name))
         {
             throw new BussinessRuleException($"The {nameof(name)} is required.");
         }
-        if(string.IsNullOrWhiteSpace(email))
+        if(email is null)
         {
             throw new BussinessRuleException($"The {nameof(email)} is required.");
-        }
-
-        if(!email.Contains("@"))
-        {
-            throw new BussinessRuleException($"The {nameof(email)} is not valid.");
         }
 
         Name = name;
