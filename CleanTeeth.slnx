@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/API/" />
   <Folder Name="/Core/">
+    <Project Path="CleanTeeth.Application/CleanTeeth.Application.csproj" />
     <Project Path="CleanTheet.Domain/CleanTheet.Domain.csproj" />
   </Folder>
   <Folder Name="/Infrastructure/" />
