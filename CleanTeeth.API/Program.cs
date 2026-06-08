@@ -1,3 +1,4 @@
+using CleanTeeth.API.Middlewares;
 using CleanTeeth.Application;
 using CleanTeeth.Persistance;
 
@@ -10,6 +11,8 @@ builder.Services.AddPersistenceServices(builder.Configuration);
 builder.Services.AddApplicationServices();
 
 var app = builder.Build();
+
+app.UseCustomExceptionHandler();
 
 // Configure the HTTP request pipeline.
 
