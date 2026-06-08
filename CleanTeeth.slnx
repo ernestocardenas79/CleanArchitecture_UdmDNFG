@@ -1,5 +1,7 @@
 <Solution>
-  <Folder Name="/API/" />
+  <Folder Name="/API/">
+    <Project Path="CleanTeeth.API/CleanTeeth.API.csproj" Id="27253a24-a076-4f0c-a9dd-3ae656a2bcff" />
+  </Folder>
   <Folder Name="/Core/">
     <Project Path="CleanTeeth.Application/CleanTeeth.Application.csproj">
       <Build Solution="Debug|*" Project="false" />
@@ -7,7 +9,9 @@
     <Project Path="CleanTheet.Domain/CleanTheet.Domain.csproj" />
   </Folder>
   <Folder Name="/Infrastructure/">
-    <Project Path="CleanTeeth.Persistance/CleanTeeth.Persistance.csproj" Id="50b1cf63-a4ff-4056-bd5f-b48de036e71b" />
+    <Project Path="CleanTeeth.Persistance/CleanTeeth.Persistance.csproj" Id="50b1cf63-a4ff-4056-bd5f-b48de036e71b">
+      <Build Solution="Debug|*" Project="false" />
+    </Project>
   </Folder>
   <Folder Name="/Testing/">
     <Project Path="CleanTheet.Tests/CleanTheet.Tests.csproj" Id="0c8250f8-dbe8-4059-a96d-3a4d04fb6315" />
