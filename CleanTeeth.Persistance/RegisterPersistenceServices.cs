@@ -14,7 +14,8 @@ public static class RegisterPersistenceServices
         services.AddDbContext<CleanTeethDbContext>(options =>
             options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
-
+        services.AddScoped<IDentalOfficeRepository, IDentalOfficeRepository>();
+        services.AddScoped<IUnitOfWork, UnitOfWorkEFCore>();
 
         return services;
     }
