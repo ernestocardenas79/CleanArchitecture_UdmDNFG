@@ -1,10 +1,14 @@
 <Solution>
   <Folder Name="/API/" />
   <Folder Name="/Core/">
-    <Project Path="CleanTeeth.Application/CleanTeeth.Application.csproj" />
+    <Project Path="CleanTeeth.Application/CleanTeeth.Application.csproj">
+      <Build Solution="Debug|*" Project="false" />
+    </Project>
     <Project Path="CleanTheet.Domain/CleanTheet.Domain.csproj" />
   </Folder>
-  <Folder Name="/Infrastructure/" />
+  <Folder Name="/Infrastructure/">
+    <Project Path="CleanTeeth.Persistance/CleanTeeth.Persistance.csproj" Id="50b1cf63-a4ff-4056-bd5f-b48de036e71b" />
+  </Folder>
   <Folder Name="/Testing/">
     <Project Path="CleanTheet.Tests/CleanTheet.Tests.csproj" Id="0c8250f8-dbe8-4059-a96d-3a4d04fb6315" />
   </Folder>
