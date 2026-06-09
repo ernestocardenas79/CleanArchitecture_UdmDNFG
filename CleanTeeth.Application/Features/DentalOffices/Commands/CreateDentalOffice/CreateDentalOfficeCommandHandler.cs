@@ -2,8 +2,7 @@ using CleanTeeth.Application.Contracts.Persistence;
 using CleanTeeth.Application.Contracts.Repositories;
 using CleanTeeth.Application.Exceptions;
 using CleanTeeth.Application.Utilities;
-using CleanTheet.Domain.Entities;
-using FluentValidation;
+using CleanTeeth.Domain.Entities;
 
 namespace CleanTeeth.Application.Features.DentalOffices.Commands.CreateDentalOffice;
 

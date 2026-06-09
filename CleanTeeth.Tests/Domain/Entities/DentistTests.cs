@@ -1,11 +1,11 @@
-﻿using CleanTheet.Domain.Entities;
-using CleanTheet.Domain.Exceptions;
-using CleanTheet.Domain.ValueObjects;
+﻿using CleanTeeth.Domain.Entities;
+using CleanTeeth.Domain.Exceptions;
+using CleanTeeth.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CleanTheet.Tests.Domain.Entities;
+namespace CleanTeeth.Tests.Domain.Entities;
 
 
 [TestClass]

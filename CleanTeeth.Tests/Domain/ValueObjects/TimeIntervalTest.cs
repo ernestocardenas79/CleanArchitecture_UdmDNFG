@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CleanTheet.Tests.Domain.ValueObjects;
+namespace CleanTeeth.Tests.Domain.ValueObjects;
 
 [TestClass]
 public class TimeIntervalTest

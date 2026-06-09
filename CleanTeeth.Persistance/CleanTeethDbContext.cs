@@ -1,14 +1,15 @@
-﻿using CleanTheet.Domain.Entities;
+﻿using CleanTeeth.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CleanTeeth.Persistance;
 
 public class CleanTeethDbContext:DbContext
 {
     public CleanTeethDbContext(DbContextOptions<CleanTeethDbContext> options) : base(options)
+    {
+    }
+
+    public CleanTeethDbContext()
     {
     }
 

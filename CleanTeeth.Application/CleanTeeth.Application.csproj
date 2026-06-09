@@ -6,7 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\CleanTheet.Domain\CleanTheet.Domain.csproj" />
+      <ProjectReference Include="..\CleanTeeth.Domain\CleanTeeth.Domain.csproj" />
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />

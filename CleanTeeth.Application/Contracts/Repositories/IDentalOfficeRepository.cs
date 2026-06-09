@@ -1,4 +1,4 @@
-using CleanTheet.Domain.Entities;
+using CleanTeeth.Domain.Entities;
 
 namespace CleanTeeth.Application.Contracts.Repositories;
 

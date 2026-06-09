@@ -4,7 +4,7 @@ using FluentValidation;
 using NSubstitute;
 using NSubstitute.ReturnsExtensions;
 
-namespace CleanTheet.Tests.Application.Utilities.Mediator;
+namespace CleanTeeth.Tests.Application.Utilities.Mediator;
 
 [TestClass]
 public class SimpleMediatorTests

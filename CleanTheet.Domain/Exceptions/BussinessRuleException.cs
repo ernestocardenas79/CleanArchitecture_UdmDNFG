@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CleanTheet.Domain.Exceptions;
+namespace CleanTeeth.Domain.Exceptions;
 
 public class BussinessRuleException : Exception
 {

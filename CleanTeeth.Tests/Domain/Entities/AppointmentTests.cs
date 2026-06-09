@@ -1,9 +1,9 @@
-﻿using CleanTheet.Domain.Entities;
-using CleanTheet.Domain.Enums;
-using CleanTheet.Domain.Exceptions;
-using CleanTheet.Domain.ValueObjects;
+﻿using CleanTeeth.Domain.Entities;
+using CleanTeeth.Domain.Enums;
+using CleanTeeth.Domain.Exceptions;
+using CleanTeeth.Domain.ValueObjects;
 
-namespace CleanTheet.Tests.Domain.Entities;
+namespace CleanTeeth.Tests.Domain.Entities;
 
 [TestClass]
 public class AppointmentTests

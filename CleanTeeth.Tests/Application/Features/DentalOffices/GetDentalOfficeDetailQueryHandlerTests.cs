@@ -5,7 +5,7 @@ using CleanTheet.Domain.Entities;
 using NSubstitute;
 using NSubstitute.ReturnsExtensions;
 
-namespace CleanTheet.Tests.Application.Features.DentalOffices;
+namespace CleanTeeth.Tests.Application.Features.DentalOffices;
 
 [TestClass]
 public class GetDentalOfficeDetailQueryHandlerTests
@@ -17,7 +17,7 @@ public class GetDentalOfficeDetailQueryHandlerTests
     public void SetUp()
     {
         repository= Substitute.For<IDentalOfficeRepository>();
-        handler = new GetDentalOfficeDetailQueryHandler(repository);
+        //handler = new GetDentalOfficeDetailQueryHandler(repository);
     }
 
     [TestMethod]

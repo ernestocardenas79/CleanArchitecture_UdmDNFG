@@ -1,10 +1,10 @@
-﻿using CleanTheet.Domain.Entities;
-using CleanTheet.Domain.Exceptions;
+﻿using CleanTeeth.Domain.Entities;
+using CleanTeeth.Domain.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CleanTheet.Tests.Domain.Entities;
+namespace CleanTeeth.Tests.Domain.Entities;
 
 [TestClass]
 public class DentalOfficeTests

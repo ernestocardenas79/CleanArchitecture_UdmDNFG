@@ -1,9 +1,9 @@
-﻿using CleanTheet.Domain.Exceptions;
+﻿using CleanTeeth.Domain.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CleanTheet.Domain.ValueObjects;
+namespace CleanTeeth.Domain.ValueObjects;
 
 public record Email
 {

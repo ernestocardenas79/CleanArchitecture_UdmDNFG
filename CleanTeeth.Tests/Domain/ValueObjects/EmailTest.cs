@@ -1,10 +1,10 @@
-﻿using CleanTheet.Domain.Exceptions;
-using CleanTheet.Domain.ValueObjects;
+﻿using CleanTeeth.Domain.Exceptions;
+using CleanTeeth.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CleanTheet.Tests.Domain.ValueObjects;
+namespace CleanTeeth.Tests.Domain.ValueObjects;
 
 [TestClass]
 public class EmailTest

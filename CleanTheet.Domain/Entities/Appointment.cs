@@ -1,8 +1,8 @@
-﻿using CleanTheet.Domain.Enums;
-using CleanTheet.Domain.Exceptions;
-using CleanTheet.Domain.ValueObjects;
+﻿using CleanTeeth.Domain.Enums;
+using CleanTeeth.Domain.Exceptions;
+using CleanTeeth.Domain.ValueObjects;
 
-namespace CleanTheet.Domain.Entities;
+namespace CleanTeeth.Domain.Entities;
 
 public class Appointment
 {

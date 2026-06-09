@@ -1,6 +1,6 @@
-﻿using CleanTheet.Domain.Exceptions;
+﻿using CleanTeeth.Domain.Exceptions;
 
-namespace CleanTheet.Domain.Entities;
+namespace CleanTeeth.Domain.Entities;
 
 public class DentalOffice
 {

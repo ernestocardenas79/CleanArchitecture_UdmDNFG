@@ -1,11 +1,11 @@
 using CleanTeeth.Application.Contracts.Persistence;
 using CleanTeeth.Application.Contracts.Repositories;
 using CleanTeeth.Application.Features.DentalOffices.Commands.CreateDentalOffice;
-using CleanTheet.Domain.Entities;
+using CleanTeeth.Domain.Entities;
 using NSubstitute;
 using NSubstitute.ExceptionExtensions;
 
-namespace CleanTheet.Tests.Application.Features.DentalOffices;
+namespace CleanTeeth.Tests.Application.Features.DentalOffices;
 
 [TestClass]
 public class CreateDentalOfficeCommandHandlerTests
@@ -19,7 +19,7 @@ public class CreateDentalOfficeCommandHandlerTests
     {
         repository= Substitute.For<IDentalOfficeRepository>();
         unitOfWork = Substitute.For<IUnitOfWork>();
-        handler = new CreateDentalOfficeCommandHandler(repository, unitOfWork);
+        //handler = new CreateDentalOfficeCommandHandler(repository, unitOfWork);
     }
 
     [TestMethod]
