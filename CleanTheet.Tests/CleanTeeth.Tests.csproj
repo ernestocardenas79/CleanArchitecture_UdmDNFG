@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CleanTeeth.Application\CleanTeeth.Application.csproj" />
-    <ProjectReference Include="..\CleanTheet.Domain\CleanTheet.Domain.csproj" />
+    <ProjectReference Include="..\CleanTheet.Domain\CleanTeeth.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
