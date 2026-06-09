@@ -1,5 +1,5 @@
 ﻿using CleanTeeth.Application.Contracts.Repositories;
-using CleanTheet.Domain.Entities;
+using CleanTeeth.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
