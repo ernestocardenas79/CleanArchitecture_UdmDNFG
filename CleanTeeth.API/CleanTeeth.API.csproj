@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CleanTeeth.Application\CleanTeeth.Application.csproj" />
+    <ProjectReference Include="..\CleanTeeth.Domain\CleanTeeth.Domain.csproj" />
     <ProjectReference Include="..\CleanTeeth.Persistance\CleanTeeth.Persistence.csproj" />
   </ItemGroup>
 

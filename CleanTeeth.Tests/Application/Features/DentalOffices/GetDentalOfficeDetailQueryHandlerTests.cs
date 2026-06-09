@@ -1,7 +1,7 @@
 using CleanTeeth.Application.Contracts.Repositories;
 using CleanTeeth.Application.Exceptions;
 using CleanTeeth.Application.Features.DentalOffices.Queries.GetDentalOfficeDetail;
-using CleanTheet.Domain.Entities;
+using CleanTeeth.Domain.Entities;
 using NSubstitute;
 using NSubstitute.ReturnsExtensions;
 

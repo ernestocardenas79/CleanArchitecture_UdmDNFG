@@ -6,7 +6,7 @@
     <Project Path="CleanTeeth.Application/CleanTeeth.Application.csproj">
       <Build Solution="Debug|*" Project="false" />
     </Project>
-    <Project Path="CleanTheet.Domain/CleanTeeth.Domain.csproj" />
+    <Project Path="CleanTeeth.Domain/CleanTeeth.Domain.csproj" />
   </Folder>
   <Folder Name="/Infrastructure/">
     <Project Path="CleanTeeth.Persistance/CleanTeeth.Persistence.csproj" Id="50b1cf63-a4ff-4056-bd5f-b48de036e71b">
