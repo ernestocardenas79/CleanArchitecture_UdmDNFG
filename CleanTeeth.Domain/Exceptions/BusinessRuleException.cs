@@ -4,9 +4,9 @@ using System.Text;
 
 namespace CleanTeeth.Domain.Exceptions;
 
-public class BussinessRuleException : Exception
+public class BusinessRuleException : Exception
 {
-    public BussinessRuleException(string message) : base(message)
+    public BusinessRuleException(string message) : base(message)
     {
     }
 }

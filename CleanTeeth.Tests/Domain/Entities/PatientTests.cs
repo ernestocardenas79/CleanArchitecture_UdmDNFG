@@ -14,13 +14,13 @@ public class PatientTests
     public void Constructor_NullName_Throws()
     {
         var email = new Email("valid@example.com");
-        Assert.ThrowsExactly<BussinessRuleException>(() => new Patient(null!, email));
+        Assert.ThrowsExactly<BusinessRuleException>(() => new Patient(null!, email));
     }
 
     [TestMethod]
     public void Constructor_NullEmail_Throws()
     {
-        Assert.ThrowsExactly<BussinessRuleException>(() => new Patient("Valid Name", null!));
+        Assert.ThrowsExactly<BusinessRuleException>(() => new Patient("Valid Name", null!));
     }
 
     [TestMethod]

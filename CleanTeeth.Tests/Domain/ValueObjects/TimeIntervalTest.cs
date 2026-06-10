@@ -14,7 +14,7 @@ public class TimeIntervalTest
     {
         var start = DateTime.Now;
         var end = start.AddHours(-1);
-        Assert.ThrowsExactly<BussinessRuleException>(() => new TimeInterval(start, end));
+        Assert.ThrowsExactly<BusinessRuleException>(() => new TimeInterval(start, end));
     }
 
     [TestMethod]

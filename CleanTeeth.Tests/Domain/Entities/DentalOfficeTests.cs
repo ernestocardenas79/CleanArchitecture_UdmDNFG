@@ -12,6 +12,6 @@ public class DentalOfficeTests
     [TestMethod]
     public void Constructor_NullName_Throws()
     {
-        Assert.ThrowsExactly<BussinessRuleException>(() => new DentalOffice(null!));
+        Assert.ThrowsExactly<BusinessRuleException>(() => new DentalOffice(null!));
     }
 }

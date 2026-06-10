@@ -12,13 +12,13 @@ public class EmailTest
     [TestMethod]
     public void Contructor_NullMail_Throws()
     {
-        Assert.ThrowsExactly<BussinessRuleException>(() => new Email(null!));
+        Assert.ThrowsExactly<BusinessRuleException>(() => new Email(null!));
     }
 
     [TestMethod]
     public void Constructor_EmailWithoutAt_Throws()
     {
-        Assert.ThrowsExactly<BussinessRuleException>(()=> new Email("valid.com"));
+        Assert.ThrowsExactly<BusinessRuleException>(()=> new Email("valid.com"));
     }
 
     [TestMethod]

@@ -30,7 +30,7 @@ public class AppointmentTests
     public void Constructor_StartTimeInThePast_Throws()
     {
         var pastInterval = new TimeInterval(DateTime.Now.AddHours(-2), DateTime.Now.AddHours(-1));
-        Assert.ThrowsExactly<BussinessRuleException>(() => new Appointment(_patientId, _dentistId, _dentalOfficeId, pastInterval));
+        Assert.ThrowsExactly<BusinessRuleException>(() => new Appointment(_patientId, _dentistId, _dentalOfficeId, pastInterval));
     }
 
     [TestMethod]
@@ -45,7 +45,7 @@ public class AppointmentTests
     {
         var appointment = new Appointment(_patientId, _dentistId, _dentalOfficeId, _timeInterval);
         appointment.Cancel();
-        Assert.ThrowsExactly<BussinessRuleException>(() => appointment.Cancel());
+        Assert.ThrowsExactly<BusinessRuleException>(() => appointment.Cancel());
     }
 
     [TestMethod]
@@ -61,6 +61,6 @@ public class AppointmentTests
     {
         var appointment = new Appointment(_patientId, _dentistId, _dentalOfficeId, _timeInterval);
         appointment.Cancel();
-        Assert.ThrowsExactly<BussinessRuleException>(() => appointment.Complete());
+        Assert.ThrowsExactly<BusinessRuleException>(() => appointment.Complete());
     }
 }

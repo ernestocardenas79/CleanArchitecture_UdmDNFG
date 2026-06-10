@@ -11,7 +11,7 @@ public class DentalOffice
     {
         if(string.IsNullOrWhiteSpace(name))
         {
-            throw new BussinessRuleException($"The {nameof(name)} is required.");
+            throw new BusinessRuleException($"The {nameof(name)} is required.");
         }
         Name = name;
         Id = Guid.CreateVersion7();

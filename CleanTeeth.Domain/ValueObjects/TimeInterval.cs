@@ -11,7 +11,7 @@ public class TimeInterval
     {
         if (start >= end)
         {
-            throw new BussinessRuleException("Start time must be before end time.");
+            throw new BusinessRuleException("Start time must be before end time.");
         }
 
         Start = start;

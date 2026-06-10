@@ -12,11 +12,11 @@ public record Email
     {
         if (string.IsNullOrWhiteSpace(email))
         {
-            throw new BussinessRuleException($"The {nameof(email)} is required");
+            throw new BusinessRuleException($"The {nameof(email)} is required");
         }
         if (!email.Contains("@"))
         {
-            throw new BussinessRuleException($"The {nameof(email)} is not valid");
+            throw new BusinessRuleException($"The {nameof(email)} is not valid");
         }
 
         Value = email;

@@ -16,11 +16,11 @@ public class Patient
     {
         if(string.IsNullOrWhiteSpace(name))
         {
-            throw new BussinessRuleException($"The {nameof(name)} is required.");
+            throw new BusinessRuleException($"The {nameof(name)} is required.");
         }
         if(email is null)
         {
-            throw new BussinessRuleException($"The {nameof(email)} is required.");
+            throw new BusinessRuleException($"The {nameof(email)} is required.");
         }
 
         Name = name;

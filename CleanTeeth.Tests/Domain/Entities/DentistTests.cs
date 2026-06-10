@@ -15,13 +15,13 @@ public class DentistTests
     public void Constructor_NullName_Throws()
     {
         var email = new Email("valid@example.com");
-        Assert.ThrowsExactly<BussinessRuleException>(() => new Dentist(null!, email));
+        Assert.ThrowsExactly<BusinessRuleException>(() => new Dentist(null!, email));
     }
 
     [TestMethod]
     public void Constructor_NullEmail_Throws()
     {
-        Assert.ThrowsExactly<BussinessRuleException>(() => new Dentist("Valid Name", null!));
+        Assert.ThrowsExactly<BusinessRuleException>(() => new Dentist("Valid Name", null!));
     }
 
     [TestMethod]

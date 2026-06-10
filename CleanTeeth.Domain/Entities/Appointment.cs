@@ -21,7 +21,7 @@ public class Appointment
     {
         if (timeInterval.Start < DateTime.Now)
         {
-            throw new BussinessRuleException("The start time cannot be in the past");
+            throw new BusinessRuleException("The start time cannot be in the past");
         }
 
         PatientId = patientId;
@@ -36,7 +36,7 @@ public class Appointment
     {
         if (Status != AppointmentStatus.Scheduled)
         {
-            throw new BussinessRuleException("Only scheduled appointments can be cancelled");
+            throw new BusinessRuleException("Only scheduled appointments can be cancelled");
         }
         Status = AppointmentStatus.Cancelled;
     }
@@ -45,7 +45,7 @@ public class Appointment
     {
         if (Status != AppointmentStatus.Scheduled)
         {
-            throw new BussinessRuleException("Only scheduled appointments can be completed");
+            throw new BusinessRuleException("Only scheduled appointments can be completed");
         }
         Status = AppointmentStatus.Completed;
     }
