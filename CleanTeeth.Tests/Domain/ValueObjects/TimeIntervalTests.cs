@@ -7,7 +7,7 @@ using System.Text;
 namespace CleanTeeth.Tests.Domain.ValueObjects;
 
 [TestClass]
-public class TimeIntervalTest
+public class TimeIntervalTests
 {
     [TestMethod]
     public void Constructor_EndBeforeStart_Throws()

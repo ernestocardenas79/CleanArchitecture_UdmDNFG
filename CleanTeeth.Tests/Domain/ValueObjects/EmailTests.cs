@@ -7,7 +7,7 @@ using System.Text;
 namespace CleanTeeth.Tests.Domain.ValueObjects;
 
 [TestClass]
-public class EmailTest
+public class EmailTests
 {
     [TestMethod]
     public void Contructor_NullMail_Throws()
