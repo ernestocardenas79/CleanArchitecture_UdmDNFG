@@ -54,7 +54,7 @@ public class SimpleMediatorTests
         
         var mediator = new SimpleMediator(serviceProvider);
         
-        await Assert.ThrowsExactlyAsync<MediatiorException>( () =>  mediator.Send(request));
+        await Assert.ThrowsExactlyAsync<MediatorException>( () =>  mediator.Send(request));
     }
 
     [TestMethod]

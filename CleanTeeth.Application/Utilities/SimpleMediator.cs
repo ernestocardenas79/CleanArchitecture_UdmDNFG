@@ -35,7 +35,7 @@ public class SimpleMediator(IServiceProvider serviceProvider) : IMediator
 
         if (handler is null)
         {
-            throw new MediatiorException($"Handler was not found for {request.GetType().Name}");
+            throw new MediatorException($"Handler was not found for {request.GetType().Name}");
         }
         
         var method = handlerType.GetMethod("Handle");

@@ -3,15 +3,11 @@
     <Project Path="CleanTeeth.API/CleanTeeth.API.csproj" Id="27253a24-a076-4f0c-a9dd-3ae656a2bcff" />
   </Folder>
   <Folder Name="/Core/">
-    <Project Path="CleanTeeth.Application/CleanTeeth.Application.csproj">
-      <Build Solution="Debug|*" Project="false" />
-    </Project>
+    <Project Path="CleanTeeth.Application/CleanTeeth.Application.csproj" />
     <Project Path="CleanTeeth.Domain/CleanTeeth.Domain.csproj" />
   </Folder>
   <Folder Name="/Infrastructure/">
-    <Project Path="CleanTeeth.Persistance/CleanTeeth.Persistence.csproj" Id="50b1cf63-a4ff-4056-bd5f-b48de036e71b">
-      <Build Solution="Debug|*" Project="false" />
-    </Project>
+    <Project Path="CleanTeeth.Persistence/CleanTeeth.Persistence.csproj" />
   </Folder>
   <Folder Name="/Testing/">
     <Project Path="CleanTeeth.Tests/CleanTeeth.Tests.csproj" />

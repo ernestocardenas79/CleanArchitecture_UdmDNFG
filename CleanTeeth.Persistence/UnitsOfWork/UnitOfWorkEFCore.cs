@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CleanTeeth.Persistance.UnitsOfWork;
+namespace CleanTeeth.Persistence.UnitsOfWork;
 
 public class UnitOfWorkEFCore : IUnitOfWork
 {

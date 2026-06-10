@@ -1,6 +1,6 @@
 using CleanTeeth.API.Middlewares;
 using CleanTeeth.Application;
-using CleanTeeth.Persistance;
+using CleanTeeth.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CleanTeeth.Persistance.Repositories;
+namespace CleanTeeth.Persistence.Repositories;
 
 public class DentalOfficeRepository: Repository<DentalOffice>, IDentalOfficeRepository
 {

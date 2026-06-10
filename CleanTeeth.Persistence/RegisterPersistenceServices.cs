@@ -1,10 +1,11 @@
 ﻿using CleanTeeth.Application.Contracts.Persistence;
 using CleanTeeth.Application.Contracts.Repositories;
-using CleanTeeth.Persistance.UnitsOfWork;
+using CleanTeeth.Persistance;
+using CleanTeeth.Persistence.UnitsOfWork;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CleanTeeth.Persistance;
+namespace CleanTeeth.Persistence;
 
 public static class RegisterPersistenceServices
 {

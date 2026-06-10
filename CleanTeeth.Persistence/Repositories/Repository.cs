@@ -1,7 +1,7 @@
 ﻿using CleanTeeth.Application.Contracts.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanTeeth.Persistance.Repositories;
+namespace CleanTeeth.Persistence.Repositories;
 
 public class Repository<T> : IRepository<T> where T : class
 {

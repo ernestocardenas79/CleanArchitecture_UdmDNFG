@@ -1,7 +1,7 @@
 ﻿using CleanTeeth.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanTeeth.Persistance;
+namespace CleanTeeth.Persistence;
 
 public class CleanTeethDbContext:DbContext
 {
