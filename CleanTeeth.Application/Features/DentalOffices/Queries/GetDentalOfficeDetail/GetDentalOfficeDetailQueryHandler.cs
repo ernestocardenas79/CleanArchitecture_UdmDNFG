@@ -4,7 +4,7 @@ using CleanTeeth.Application.Utilities;
 
 namespace CleanTeeth.Application.Features.DentalOffices.Queries.GetDentalOfficeDetail;
 
-public class GetDentalOfficeDetailQueryHandler(IDentalOfficeRepository repository): IRequestHandler<GetDentalOfficeDetailQuery, DentalOfficeDetailDTO>
+public class GetDentalOfficeDetailQueryHandler(IDentalOfficeRepository repository) : IRequestHandler<GetDentalOfficeDetailQuery, DentalOfficeDetailDTO>
 {
     public async Task<DentalOfficeDetailDTO> Handle(GetDentalOfficeDetailQuery request)
     {

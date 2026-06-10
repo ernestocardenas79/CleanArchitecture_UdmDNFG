@@ -5,7 +5,7 @@ using CleanTeeth.Domain.Entities;
 
 namespace CleanTeeth.Application.Features.DentalOffices.Commands.CreateDentalOffice;
 
-public class CreateDentalOfficeCommandHandler(IDentalOfficeRepository dentalOfficeRepository, 
+public class CreateDentalOfficeCommandHandler(IDentalOfficeRepository dentalOfficeRepository,
                                               IUnitOfWork unitOfWork)
                      : IRequestHandler<CreateDentalOfficeCommand, Guid>
 {

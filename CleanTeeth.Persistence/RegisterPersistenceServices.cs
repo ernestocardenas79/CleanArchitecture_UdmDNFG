@@ -1,6 +1,6 @@
 ﻿using CleanTeeth.Application.Contracts.Persistence;
 using CleanTeeth.Application.Contracts.Repositories;
-using CleanTeeth.Persistance;
+using CleanTeeth.Persistence.Repositories;
 using CleanTeeth.Persistence.UnitsOfWork;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,9 +12,9 @@ public static class RegisterPersistenceServices
     public static IServiceCollection AddPersistenceServices(this IServiceCollection services)
     {
         services.AddDbContext<CleanTeethDbContext>(options =>
-            options.UseSqlServer("YourConnectionStringHere"));
+            options.UseSqlServer("Name=ConnectionStrings:CleanTeethConnectionString"));
 
-        services.AddScoped<IDentalOfficeRepository, IDentalOfficeRepository>();
+        services.AddScoped<IDentalOfficeRepository, DentalOfficeRepository>();
         services.AddScoped<IUnitOfWork, UnitOfWorkEFCore>();
 
         return services;
