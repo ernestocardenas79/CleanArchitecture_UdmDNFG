@@ -16,7 +16,6 @@
   <ItemGroup>
     <ProjectReference Include="..\CleanTeeth.Application\CleanTeeth.Application.csproj" />
     <ProjectReference Include="..\CleanTeeth.Domain\CleanTeeth.Domain.csproj" />
-    <ProjectReference Include="..\CleanTeeth.Persistance\CleanTeeth.Persistence.csproj" />
     <ProjectReference Include="..\CleanTeeth.Persistence\CleanTeeth.Persistence.csproj" />
   </ItemGroup>
 
