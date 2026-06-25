@@ -17,6 +17,7 @@ public class DentalOfficesController : ControllerBase
         this.mediator = mediator;
     }
 
+    [HttpGet("{id}")]
     [HttpPost]
     public async Task<IActionResult> Post(CreateDentalOfficeDTO createDentalOfficeDTO)
     {
