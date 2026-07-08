@@ -19,7 +19,7 @@ public class CreateDentalOfficeCommandHandlerTests
     {
         repository= Substitute.For<IDentalOfficeRepository>();
         unitOfWork = Substitute.For<IUnitOfWork>();
-        //handler = new CreateDentalOfficeCommandHandler(repository, unitOfWork);
+        handler = new CreateDentalOfficeCommandHandler(repository, unitOfWork);
     }
 
     [TestMethod]

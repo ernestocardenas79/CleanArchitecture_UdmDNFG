@@ -17,7 +17,7 @@ public class GetDentalOfficeDetailQueryHandlerTests
     public void SetUp()
     {
         repository= Substitute.For<IDentalOfficeRepository>();
-        //handler = new GetDentalOfficeDetailQueryHandler(repository);
+        handler = new GetDentalOfficeDetailQueryHandler(repository);
     }
 
     [TestMethod]
