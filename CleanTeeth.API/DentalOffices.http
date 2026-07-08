@@ -15,7 +15,17 @@ POST {{CleanTeeth.API_HostAddress}}
 Content-Type: application/json
 
 {
-  "name": "Bright Smiles Dental Clinic"
+  "name": "Dientes de acero Dental Clinic"
 }
 
 ###
+
+PUT {{CleanTeeth.API_HostAddress}}/019efff9-bb76-7433-bf88-812326c3a039
+Content-Type: application/json
+
+{
+  "name": "Sonrisa Bionica Dental Clinikk"
+}
+
+###
+
