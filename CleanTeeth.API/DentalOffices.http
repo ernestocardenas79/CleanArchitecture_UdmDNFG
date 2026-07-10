@@ -1,17 +1,16 @@
 @CleanTeeth.API_HostAddress = http://localhost:5073/api/dentalOffices
 
-
-GET {{CleanTeeth.API_HostAddress}}
+GET {{CleanTeeth.API_HostAddress}}/dentalOffices
 Accept: application/json
 
 ###
-GET {{CleanTeeth.API_HostAddress}}/019efff9-bb76-7433-bf88-812326c3a039
+GET {{CleanTeeth.API_HostAddress}}/dentalOffices/019f0b1e-5f93-782c-bdc8-cb3f35432a64
 Accept: application/json
 
 
 ###
 
-POST {{CleanTeeth.API_HostAddress}}
+POST {{CleanTeeth.API_HostAddress}}/dentalOffices
 Content-Type: application/json
 
 {
@@ -20,12 +19,18 @@ Content-Type: application/json
 
 ###
 
-PUT {{CleanTeeth.API_HostAddress}}/019efff9-bb76-7433-bf88-812326c3a039
+PUT {{CleanTeeth.API_HostAddress}}/dentalOffices/019efff9-bb76-7433-bf88-812326c3a039
 Content-Type: application/json
 
 {
   "name": "Sonrisa Bionica Dental Clinikk"
 }
+
+###
+
+DELETE {{CleanTeeth.API_HostAddress}}/dentalOffices/019f4951-5c84-7a82-921c-88edc66a0aef
+Content-Type: application/json
+
 
 ###
 
