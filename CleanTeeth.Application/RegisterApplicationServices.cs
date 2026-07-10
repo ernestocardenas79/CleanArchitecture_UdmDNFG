@@ -1,4 +1,5 @@
 using CleanTeeth.Application.Features.DentalOffices.Commands.CreateDentalOffice;
+using CleanTeeth.Application.Features.DentalOffices.Commands.DeleteDentalOffice;
 using CleanTeeth.Application.Features.DentalOffices.Commands.UpdateDentalOffice;
 using CleanTeeth.Application.Features.DentalOffices.Queries.GetDentalOfficeDetail;
 using CleanTeeth.Application.Features.DentalOffices.Queries.GetDentalOfficesList;
@@ -16,6 +17,7 @@ public static class RegisterApplicationServices
         services.AddScoped<IRequestHandler<GetDentalOfficeDetailQuery, DentalOfficeDetailDTO>, GetDentalOfficeDetailQueryHandler>();
         services.AddScoped<IRequestHandler<GetDentalOfficesListQuery, List<DentalOfficesListDTO>>, GetDentalOfficesListQueryHandler>();
         services.AddScoped<IRequestHandler<UpdateDentalOfficeCommand>, UpdateDentalOfficeCommandHandler>();
+        services.AddScoped<IRequestHandler<DeleteDentalOfficeCommand>, DeleteDentalOfficeCommandHandler>();
         
         return services;
     }
