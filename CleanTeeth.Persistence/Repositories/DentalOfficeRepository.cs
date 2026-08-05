@@ -12,6 +12,12 @@ public class DentalOfficeRepository: Repository<DentalOffice>, IDentalOfficeRepo
     {
         
     }
+}
 
+public class PatientRepository : Repository<Patient>, IPatientRepository
+{
+    public PatientRepository(CleanTeethDbContext context) : base(context)
+    {
 
+    }
 }
