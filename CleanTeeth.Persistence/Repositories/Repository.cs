@@ -35,6 +35,11 @@ public class Repository<T> : IRepository<T> where T : class
         return await context.Set<T>().FindAsync(id);
     }
 
+    public async Task<int> GetTotalAmountOfRecords()
+    {
+        return await context.Set<T>().CountAsync();
+    }
+
     public Task Update(T entity)
     {
         context.Update(entity);
