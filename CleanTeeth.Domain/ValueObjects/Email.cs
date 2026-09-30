@@ -7,7 +7,8 @@ namespace CleanTeeth.Domain.ValueObjects;
 
 public record Email
 {
-    public string Value { get; private set; }
+    private Email() {}
+    public string Value { get; }= null!;
     public Email(string email)
     {
         if (string.IsNullOrWhiteSpace(email))
