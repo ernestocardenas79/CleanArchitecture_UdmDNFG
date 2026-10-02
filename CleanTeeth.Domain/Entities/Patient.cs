@@ -16,17 +16,39 @@ public class Patient
 
     public Patient(string name, Email email)
     {
-        if(string.IsNullOrWhiteSpace(name))
-        {
-            throw new BusinessRuleException($"The {nameof(name)} is required.");
-        }
-        if(email is null)
-        {
-            throw new BusinessRuleException($"The {nameof(email)} is required.");
-        }
+        EnforceNameBussinessRules(name);
+        EnforceEmailBussinessRules(email);
 
         Name = name;
         Email = email;
         Id = Guid.CreateVersion7();
+    }
+
+    public void UpdateName(string name)
+    {
+        EnforceNameBussinessRules(name);
+        Name = name;
+    }
+
+    public void UpdateEmail(Email email)
+    {
+        EnforceEmailBussinessRules(email);
+        Email = email;
+    }
+
+    private void EnforceNameBussinessRules(string name)
+    {
+        if (string.IsNullOrWhiteSpace(name))
+        {
+            throw new BusinessRuleException($"The {nameof(name)} is required.");
+        }
+    }
+
+    private void EnforceEmailBussinessRules(Email email)
+    {
+        if (email is null)
+        {
+            throw new BusinessRuleException($"The {nameof(email)} is required.");
+        }
     }
 }
