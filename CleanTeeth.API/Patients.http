@@ -1,7 +1,7 @@
 @CleanTeeth.API_HostAddress = http://localhost:5073/api
 
 
-GET {{CleanTeeth.API_HostAddress}}/patients?Name=Ern
+GET {{CleanTeeth.API_HostAddress}}/patients
 Content-Type: application/json
 
 ###
@@ -17,5 +17,19 @@ Content-Type: application/json
   "name": "Lupis Cuevas",
   "email": "Lupis@example.com"
 }
+
+###
+PUT {{CleanTeeth.API_HostAddress}}/patients/01a0fd96-e461-7ae5-b8fc-90a83a91e52f
+Content-Type: application/json
+
+{
+  "name": "Guadalupe Cuevas",
+  "email": "Guadalupe@example.com"
+}
+
+###
+
+DELETE {{CleanTeeth.API_HostAddress}}/patients/01a0fd63-22b3-7717-8873-13fa56527a65
+Content-Type: application/json
 
 ###
