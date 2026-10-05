@@ -12,6 +12,11 @@ public class Dentist
     public string Name { get; private set; }= null!;
     public Email Email { get; private set; }=null!;
 
+    public Dentist()
+    {
+        
+    }
+
     public Dentist(string name, Email email)
     {
         if(string.IsNullOrWhiteSpace(name))
