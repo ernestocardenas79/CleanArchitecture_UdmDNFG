@@ -1,5 +1,5 @@
 ﻿using CleanTeeth.API.DTOs.Dentist;
-using CleanTeeth.Application.Features.Dentists.Commands;
+using CleanTeeth.Application.Features.Dentists.Commands.CreateDentist;
 using CleanTeeth.Application.Features.Dentists.Queries.GetDentistDetail;
 using CleanTeeth.Application.Features.Dentists.Queries.GetDentists;
 using CleanTeeth.Application.Utilities;

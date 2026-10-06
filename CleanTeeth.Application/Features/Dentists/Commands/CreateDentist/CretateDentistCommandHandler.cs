@@ -4,7 +4,7 @@ using CleanTeeth.Application.Utilities;
 using CleanTeeth.Domain.Entities;
 using CleanTeeth.Domain.ValueObjects;
 
-namespace CleanTeeth.Application.Features.Dentists.Commands;
+namespace CleanTeeth.Application.Features.Dentists.Commands.CreateDentist;
 
 public class CretateDentistCommandHandler : IRequestHandler<CreateDentistCommand>
 {

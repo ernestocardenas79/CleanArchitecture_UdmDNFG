@@ -1,6 +1,6 @@
 ﻿using CleanTeeth.Application.Utilities;
 
-namespace CleanTeeth.Application.Features.Dentists.Commands;
+namespace CleanTeeth.Application.Features.Dentists.Commands.CreateDentist;
 
 public class CreateDentistCommand : IRequest
 {
