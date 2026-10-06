@@ -24,7 +24,7 @@ public class DentistsController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<PaginatedDTO<DentistListDTO>>> Get([FromQuery] DentistFilterDTO filter)
     {
-        var query = new GetDentistsQuery() { Filter = filter };
+        var query = new GetDentistsQuery() { Name = filter.Name, Email = filter.Email, Page = filter.Page,  RecordPerPage = filter.RecordPerPage };
         var result = await mediator.Send(query);
         return Ok(result);
     }

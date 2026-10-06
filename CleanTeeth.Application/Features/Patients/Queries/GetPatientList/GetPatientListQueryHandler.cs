@@ -20,8 +20,7 @@ public class GetPatientListQueryHandler:IRequestHandler<GetPatientListQuery, Pag
     {
         var patients = await patientRepository.GetFiltered(request);
         var patientsDTO = patients.Select(patient=> patient.ToDTO()).ToList();
-        var totalAmountOfRecords = await patientRepository.GetTotalAmountOfRecords();
 
-        return new() { Elements = patientsDTO, TotalAmountOfRecords = totalAmountOfRecords };
+        return new() { Elements = patientsDTO, TotalAmountOfRecords = patientsDTO.Count };
     }
 }

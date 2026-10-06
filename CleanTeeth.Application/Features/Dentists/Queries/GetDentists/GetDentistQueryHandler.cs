@@ -15,12 +15,13 @@ public class GetDentistQueryHandler : IRequestHandler<GetDentistsQuery, Paginate
 
     public async Task<PaginatedDTO<DentistListDTO>> Handle(GetDentistsQuery request)
     {
-        var filteredDentists = await dentistRepository.GetFiltered(request.Filter);
+        var filteredDentists = await dentistRepository.GetFiltered(request);
+        var filteredDentistsDTOs = filteredDentists.Select(d => d.ToDTO()).ToList();
 
-        return new PaginatedDTO<DentistListDTO>
+        return new()
         {
-            Elements = filteredDentists.Select(d => d.ToDTO()).ToList(),
-            TotalAmountOfRecords = filteredDentists.Count
+            Elements = filteredDentistsDTOs,
+            TotalAmountOfRecords = filteredDentistsDTOs.Count
         };
     }
 }
