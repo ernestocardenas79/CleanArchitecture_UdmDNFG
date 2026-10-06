@@ -5,6 +5,7 @@ using CleanTeeth.Application.Features.Dentists.Commands.UpdateDentist;
 using CleanTeeth.Application.Features.Dentists.Queries.GetDentistDetail;
 using CleanTeeth.Application.Features.Dentists.Queries.GetDentists;
 using CleanTeeth.Application.Utilities;
+using CleanTeeth.Application.Utilities.Common;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanTeeth.API.Controllers;
@@ -21,9 +22,9 @@ public class DentistsController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<List<DentistListDTO>>> Get()
+    public async Task<ActionResult<PaginatedDTO<DentistListDTO>>> Get([FromQuery] DentistFilterDTO filter)
     {
-        var query = new GetDentistsQuery();
+        var query = new GetDentistsQuery() { Filter = filter };
         var result = await mediator.Send(query);
         return Ok(result);
     }

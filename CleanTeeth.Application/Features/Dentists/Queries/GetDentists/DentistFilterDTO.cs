@@ -1,6 +1,6 @@
-﻿namespace CleanTeeth.Application.Features.Patients.Queries.GetPatientList;
+﻿namespace CleanTeeth.Application.Features.Dentists.Queries.GetDentists;
 
-public class PatientFilterDTO
+public class DentistFilterDTO
 {
     public int Page { get; set; } = 1;
     public int RecordPerPage { get; set; } = 10;

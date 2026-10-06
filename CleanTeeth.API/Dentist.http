@@ -1,7 +1,6 @@
 @CleanTeeth.API_HostAddress = http://localhost:5073/api
 
-
-GET {{CleanTeeth.API_HostAddress}}/dentists
+GET {{CleanTeeth.API_HostAddress}}/dentists?name=bati
 Content-Type: application/json
 
 ###
