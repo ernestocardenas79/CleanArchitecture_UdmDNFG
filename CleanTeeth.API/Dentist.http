@@ -4,6 +4,9 @@
 GET {{CleanTeeth.API_HostAddress}}/dentists
 Content-Type: application/json
 
+###
+GET {{CleanTeeth.API_HostAddress}}/dentists/01a11246-02c2-7ed3-9d43-e42e38f69a32
+Content-Type: application/json
 
 ###
 
@@ -14,3 +17,4 @@ Content-Type: application/json
   "name": "Dentist Lantern",
   "email": "DentistLantern@example.com"
 }
+ 
