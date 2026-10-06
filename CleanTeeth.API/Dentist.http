@@ -3,3 +3,14 @@
 
 GET {{CleanTeeth.API_HostAddress}}/dentists
 Content-Type: application/json
+
+
+###
+
+POST {{CleanTeeth.API_HostAddress}}/dentists
+Content-Type: application/json
+
+{
+  "name": "Dentist Lantern",
+  "email": "DentistLantern@example.com"
+}

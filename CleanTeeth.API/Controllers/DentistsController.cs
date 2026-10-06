@@ -1,4 +1,6 @@
-﻿using CleanTeeth.Application.Features.Dentists.Queries.GetDentists;
+﻿using CleanTeeth.API.DTOs.Dentist;
+using CleanTeeth.Application.Features.Dentists.Commands;
+using CleanTeeth.Application.Features.Dentists.Queries.GetDentists;
 using CleanTeeth.Application.Utilities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,5 +23,18 @@ public class DentistsController : ControllerBase
         var query = new GetDentistsQuery();
         var result = await mediator.Send(query);
         return Ok(result);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Post(CreateDentistDTO createDentistDTO)
+    {
+        var command = new CreateDentistCommand
+        {
+            Name = createDentistDTO.Name,
+            Email = createDentistDTO.Email
+        };
+
+        await mediator.Send(command);
+        return Ok();
     }
 }
