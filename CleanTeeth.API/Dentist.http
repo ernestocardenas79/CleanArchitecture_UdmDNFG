@@ -17,4 +17,15 @@ Content-Type: application/json
   "name": "Dentist Lantern",
   "email": "DentistLantern@example.com"
 }
- 
+
+###
+PUT {{CleanTeeth.API_HostAddress}}/dentists/01a11247-0c11-7969-ae1c-95ae86c9c4c3
+Content-Type: application/json
+
+{
+  "name": "Green Dentist Lantern",
+  "email": "GreenDentistLantern@example.com"
+}
+
+###
+
