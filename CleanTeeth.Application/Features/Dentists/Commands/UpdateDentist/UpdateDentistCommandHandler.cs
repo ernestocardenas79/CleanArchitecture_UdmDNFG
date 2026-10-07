@@ -28,7 +28,14 @@ public class UpdateDentistCommandHandler : IRequestHandler<UpdateDentistCommand>
         dentist.UpdateName(request.Name);
         dentist.UpdateEmail(new Email(request.Email));
 
-        await dentistRepository.Update(dentist);
-        await unitOfWork.Commit();
+        try {
+            await dentistRepository.Update(dentist);
+            await unitOfWork.Commit();
+        }
+        catch (Exception)
+        {
+            await unitOfWork.Rollback();
+            throw;
+        }
     }
 }

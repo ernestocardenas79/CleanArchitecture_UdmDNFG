@@ -20,7 +20,16 @@ public class CretateDentistCommandHandler : IRequestHandler<CreateDentistCommand
     public async Task Handle(CreateDentistCommand request)
     {
        var dentist = new Dentist(request.Name, new Email(request.Email));
-        await dentistRepository.Add(dentist);
-        await unitOfWork.Commit();
+
+        try
+        {
+            await dentistRepository.Add(dentist);
+            await unitOfWork.Commit();
+        }
+        catch (Exception)
+        {
+            await unitOfWork.Rollback();
+            throw;
+        }
     }
 }
