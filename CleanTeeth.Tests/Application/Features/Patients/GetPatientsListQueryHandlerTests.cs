@@ -2,9 +2,6 @@
 using CleanTeeth.Application.Features.Patients.Queries.GetPatientList;
 using CleanTeeth.Domain.Entities;
 using NSubstitute;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CleanTeeth.Tests.Application.Features.Patients;
 
@@ -30,7 +27,6 @@ public class GetPatientsListQueryHandlerTests
         IEnumerable<Patient> patients = new List<Patient> { patient1, patient2 };
 
         repository.GetFiltered(Arg.Any<PatientFilterDTO>()).Returns(Task.FromResult(patients));
-        repository.GetTotalAmountOfRecords().Returns(Task.FromResult(10));
 
         var query= new GetPatientListQuery { Page= 1, RecordPerPage = 10 };
 
@@ -47,7 +43,6 @@ public class GetPatientsListQueryHandlerTests
         IEnumerable<Patient> patients = new List<Patient> ();
 
         repository.GetFiltered(Arg.Any<PatientFilterDTO>()).Returns(Task.FromResult(patients));
-        repository.GetTotalAmountOfRecords().Returns(Task.FromResult(0));
 
         var query = new GetPatientListQuery { Page = 1, RecordPerPage = 10 };
         var result = await handler.Handle(query);
