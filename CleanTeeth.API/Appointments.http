@@ -1,0 +1,11 @@
+@CleanTeeth.API_HostAddress = https://localhost:7190/api/appointments
+
+POST {{CleanTeeth.API_HostAddress}}
+Content-Type: application/json
+{
+  "patientId": "019FD434-8D9F-7894-855C-CA1D2EF0A8C4",
+  "dentistId": "01A11246-A545-7E3E-91D8-7838C4F30208",
+  "dentalOfficeId": "019EFFF9-BB76-7433-BF88-812326C3A039",
+  "startDate": "2026-10-15T10:00:00",
+  "endDate": "2026-10-15T11:00:00"
+}

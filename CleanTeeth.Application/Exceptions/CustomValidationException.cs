@@ -6,6 +6,11 @@ public class CustomValidationException:Exception
 {
     public List<string> ValidationErrors { get; set; } = [];
 
+    public CustomValidationException(string errorMessage)
+    {
+        ValidationErrors.Add(errorMessage);
+    }
+
     public CustomValidationException(ValidationResult validationResult)
     {
         foreach (var error in validationResult.Errors)
