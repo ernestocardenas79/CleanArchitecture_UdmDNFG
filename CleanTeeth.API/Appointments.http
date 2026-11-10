@@ -1,5 +1,10 @@
 @CleanTeeth.API_HostAddress = https://localhost:7190/api/appointments
 
+GET {{CleanTeeth.API_HostAddress}}/01a121c8-57f9-761f-9e0e-654ffe7107c8
+content-type: application/json
+
+###
+
 POST {{CleanTeeth.API_HostAddress}}
 Content-Type: application/json
 {

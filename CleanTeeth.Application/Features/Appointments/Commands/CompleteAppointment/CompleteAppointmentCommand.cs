@@ -1,0 +1,11 @@
+﻿using CleanTeeth.Application.Utilities;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CleanTeeth.Application.Features.Appointments.Commands.CompleteAppointment;
+
+public class CompleteAppointmentCommand:IRequest
+{
+    public required Guid Id { get; set; }
+}
