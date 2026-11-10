@@ -14,3 +14,7 @@ Content-Type: application/json
   "startDate": "2026-10-15T10:00:00",
   "endDate": "2026-10-15T11:00:00"
 }
+
+POST {{CleanTeeth.API_HostAddress}}/01a121c8-57f9-761f-9e0e-654ffe7107c8/complete
+
+POST {{CleanTeeth.API_HostAddress}}/01a121c8-57f9-761f-9e0e-654ffe7107c8/cancel
