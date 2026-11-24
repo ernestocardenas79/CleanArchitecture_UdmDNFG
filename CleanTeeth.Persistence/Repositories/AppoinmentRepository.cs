@@ -1,5 +1,5 @@
 ﻿using CleanTeeth.Application.Contracts.Repositories;
-using CleanTeeth.Application.Features.Appointments.Queries.GetAppointmentList;
+using CleanTeeth.Application.Contracts.Repositories.Models;
 using CleanTeeth.Domain.Entities;
 using CleanTeeth.Domain.Enums;
 using Microsoft.EntityFrameworkCore;
@@ -53,6 +53,11 @@ public class AppointmentRepository : Repository<Appointment>, IAppointmentReposi
         if(filter.PatientID is not null)
         {
             query = query.Where(a => a.PatientId == filter.PatientID);
+        }
+
+        if(filter.AppointmentStatus is not null)
+        {
+            query = query.Where(a => a.Status == filter.AppointmentStatus);
         }
 
         return await query
